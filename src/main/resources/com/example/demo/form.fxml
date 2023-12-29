@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.TextField?>-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.FormController">
+   <children>
+      <Label layoutX="215.0" layoutY="32.0" prefHeight="37.0" prefWidth="175.0" text="Supprimer un participant" />
+      <Pane layoutX="134.0" layoutY="93.0" prefHeight="258.0" prefWidth="430.0">
+         <children>
+            <TextField fx:id="date_naissance" layoutX="182.0" layoutY="160.0" />
+            <TextField fx:id="profil" layoutX="182.0" layoutY="205.0" />
+            <TextField fx:id="prenom" layoutX="182.0" layoutY="117.0" />
+            <TextField fx:id="nom" layoutX="182.0" layoutY="72.0" />
+            <TextField fx:id="matricule" layoutX="182.0" layoutY="27.0" />
+            <Label layoutX="119.0" layoutY="31.0" text="Matricule" />
+            <Label layoutX="119.0" layoutY="76.0" text="Nom" />
+            <Label layoutX="119.0" layoutY="121.0" text="Prenom" />
+            <Label layoutX="119.0" layoutY="164.0" text="Date" />
+            <Label layoutX="119.0" layoutY="209.0" text="profil" />
+         </children>
+      </Pane>
+      <Button fx:id="supprimer" layoutX="315.0" layoutY="351.0" mnemonicParsing="false" onAction="#suppression" prefHeight="26.0" prefWidth="149.0" style="-fx-background-color: red;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

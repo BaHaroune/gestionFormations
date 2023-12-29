@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="573.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.UserFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="245.0" layoutY="46.0" prefHeight="27.0" prefWidth="198.0" text="Ajouter un Participant">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="109.0" layoutY="97.0" prefHeight="131.0" prefWidth="470.0">
+         <children>
+            <TextField fx:id="login" layoutX="261.0" layoutY="14.0" />
+            <TextField fx:id="password" layoutX="261.0" layoutY="53.0" />
+            <ChoiceBox fx:id="role" layoutX="259.0" layoutY="96.0" prefWidth="150.0" />
+            <Label layoutX="174.0" layoutY="17.0" prefHeight="20.0" prefWidth="38.0" text="Login">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="148.0" layoutY="56.0" prefHeight="20.0" prefWidth="64.0" text="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="180.0" layoutY="99.0" prefHeight="20.0" prefWidth="64.0" text="Role">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="109.0" layoutY="243.0" prefHeight="214.0" prefWidth="470.0">
+         <children>
+            <TextField fx:id="matricule" layoutX="261.0" layoutY="14.0" />
+            <TextField fx:id="nom" layoutX="261.0" layoutY="53.0" />
+            <Label layoutX="161.0" layoutY="17.0" prefHeight="20.0" prefWidth="64.0" text="Matricule">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="56.0" prefHeight="20.0" prefWidth="38.0" text="Nom">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="168.0" layoutY="99.0" prefHeight="20.0" prefWidth="50.0" text="Prenom">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="prenom" layoutX="261.0" layoutY="97.0" />
+            <Label layoutX="168.0" layoutY="177.0" prefHeight="20.0" prefWidth="50.0" text="Profil">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="profil" layoutX="261.0" layoutY="175.0" />
+            <Label layoutX="122.0" layoutY="134.0" prefHeight="20.0" prefWidth="96.0" text="Date Naissance">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="date" layoutX="261.0" layoutY="132.0" prefHeight="25.0" prefWidth="156.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
